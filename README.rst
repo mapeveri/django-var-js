@@ -20,19 +20,19 @@ Quick start
 
 2. In view.py::
 
-   def example(request):
-      #Values
-      variable = "To JavaScript"
-      dicc = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+	def example(request):
+		#Values
+		variable = "To JavaScript"
+		dicc = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
 		
-      #Instance of class DjVarJs
-      pyvar = DjVarJs()
+		#Instance of class DjVarJs
+		pyvar = DjVarJs()
 
-      #Set values 
-      pyvar.set("variable", variable , request)
-      pyvar.set("dicc_django", dicc, request)
+		#Set values 
+		pyvar.set("variable", variable , request)
+		pyvar.set("dicc_django", dicc, request)
 
-      return render_to_response('example.html', context_instance=RequestContext(request))
+		return render_to_response('example.html', context_instance=RequestContext(request))
 
 3. In the template::
 	
