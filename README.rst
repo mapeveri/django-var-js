@@ -36,29 +36,29 @@ Quick start
 
 3. In the template::
 	
-   <!DOCTYPE html>
-   <html>
-   <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-     <script src='{{STATIC_URL}}js/var_js/djvarjs.js'></script>
-     <script src='{{STATIC_URL}}js/example/main.js'></script>
-   </head>
-   <body>
-     <h1>App Django-var-js</h1>
-     <label id="key_js"></label>
-     <br>
-     <label id="dict_js"></label>
-   <body>
-   </html>
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+			<script src='{{STATIC_URL}}js/var_js/djvarjs.js'></script>
+			<script src='{{STATIC_URL}}js/example/main.js'></script>
+		</head>
+		<body>
+			<h1>App Django-var-js</h1>
+			<label id="key_js"></label>
+			<br>
+			<label id="dict_js"></label>
+		<body>
+ 	</html>
 
 4. In the file .js::
 
-     var valor = DjVarJs.getKey("variable");
-     $("#key_js").text(valor);
+	var valor = DjVarJs.getKey("variable");
+	$("#key_js").text(valor);
 
-     var arr = DjVarJs.getDict("dicc_django");
-     $("#dict_js").text("Clave1: " + arr['clave1'] + ", Clave2: " + arr['clave2'] + ", Clave3: " + arr['clave3']);
+	var arr = DjVarJs.getDict("dicc_django");
+	$("#dict_js").text("Clave1: " + arr['clave1'] + ", Clave2: " + arr['clave2'] + ", Clave3: " + arr['clave3']);
 
 5. Visit http://127.0.0.1:8000/example/
