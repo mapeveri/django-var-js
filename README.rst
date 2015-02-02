@@ -18,7 +18,7 @@ Quick start
 
    url(r'^', include('var_js.dj_var_js.urls')),
 
-2. In view.py:
+2. In view.py::
 
    def example(request):
       #Values
@@ -34,7 +34,7 @@ Quick start
 
       return render_to_response('example.html', context_instance=RequestContext(request))
 
-3. In the template:
+3. In the template::
 	
    <!DOCTYPE html>
    <html>
@@ -53,7 +53,7 @@ Quick start
    <body>
    </html>
 
-4. In the file .js:
+4. In the file .js::
 
      var valor = DjVarJs.getKey("variable");
      $("#key_js").text(valor);
