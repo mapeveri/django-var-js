@@ -24,6 +24,8 @@ Quick start
 	url(r'^', include('var_js.dj_var_js.urls')),
 	
 2. In view.py::
+	
+	from var_js.views import DjVarJs
 
 	def example(request):
 		#Values
