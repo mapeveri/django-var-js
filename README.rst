@@ -6,6 +6,11 @@ Var-js
 Var-js is a simple Django application that allows communication 
 variables from the server to the client.
 
+Installing
+----------
+
+pip install django-var-js
+
 Requirements
 -----------
 
@@ -17,7 +22,7 @@ Quick start
 1. Include the var-js URLconf in your project urls.py like this::
 
 	url(r'^', include('var_js.dj_var_js.urls')),
-
+	
 2. In view.py::
 
 	def example(request):
