@@ -1,0 +1,7 @@
+Usar la cuenta username: mapeveri, password: Posta1230.
+
+Comandos:
+
+python setup.py sdist
+python setup.py register
+python setup.py sdist upload

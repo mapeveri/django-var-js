@@ -1,0 +1,8 @@
+Hacer commit de un proyecto:
+
+git add -A (Agrega todos).
+git add NombreArchivo (Agrego solamente ese archivo).
+
+git commit -m "Comentario"
+
+git push origin master (Hago el commit)

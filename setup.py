@@ -33,7 +33,7 @@ for dirpath, dirnames, filenames in os.walk(PROJECT_NAME):
 
 setup(
     name='django-var-js',
-    version='0.1',
+    version='0.5',
     packages=[
         PROJECT_NAME,
         PROJECT_NAME+'.dj_var_js', 
