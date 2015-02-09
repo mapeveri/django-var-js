@@ -10,4 +10,3 @@ var_js/__init__.py
 var_js/views.py
 var_js/dj_var_js/__init__.py
 var_js/dj_var_js/urls.py
-var_js/static/js/var_js/djvarjs.js
