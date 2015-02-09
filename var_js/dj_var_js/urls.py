@@ -3,7 +3,7 @@ from django.contrib import admin
 
 try:
 	from views import get_cache_dj_var_js, example_view_var_js
-except Exception, e:
+except Exception:
 	from var_js.views import get_cache_dj_var_js
 
 
