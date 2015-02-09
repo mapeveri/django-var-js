@@ -31,7 +31,7 @@ Description: django-var-js/README.rst
         
         	url(r'^', include('var_js.dj_var_js.urls')),
         	
-        2. In view.py::
+        2. In the view.py::
         	
         	from var_js.views import DjVarJs
         
