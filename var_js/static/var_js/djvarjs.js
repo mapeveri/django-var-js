@@ -1,6 +1,6 @@
 
 var DjVarJs = {
-	version: "0.8",
+	version: "0.9",
 	/*Obtiene una variable desde django*/
 	getKey: function(key){
 

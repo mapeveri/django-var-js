@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: django-var-js
-Version: 0.8
+Version: 0.9
 Summary: Application variables passed from the server to the client.
 Home-page: https://github.com/mapeveri/django-var-js
 Author: Peveri Martin

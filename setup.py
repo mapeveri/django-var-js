@@ -11,7 +11,7 @@ PROJECT_NAME = 'var_js'
 
 setup(
     name='django-var-js',
-    version='0.8',
+    version='0.9',
     packages=[
         PROJECT_NAME,
         PROJECT_NAME+'.dj_var_js', 
