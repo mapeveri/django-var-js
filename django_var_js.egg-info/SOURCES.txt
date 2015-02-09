@@ -1,3 +1,4 @@
+MANIFEST.in
 README.rst
 setup.py
 django_var_js.egg-info/PKG-INFO
@@ -7,3 +8,4 @@ django_var_js.egg-info/top_level.txt
 var_js/views.py
 var_js/dj_var_js/__init__.py
 var_js/dj_var_js/urls.py
+var_js/static/var_js/djvarjs.js
