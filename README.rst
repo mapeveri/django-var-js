@@ -69,3 +69,5 @@ Quick start
 	$("#dict_js").text("Clave1: " + arr['clave1'] + ", Clave2: " + arr['clave2'] + ", Clave3: " + arr['clave3']);
 
 5. Visit http://127.0.0.1:8000/example/
+
+Important: For this application is necessary that the user is logged in.
