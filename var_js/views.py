@@ -1,4 +1,6 @@
 import json
+import uuid
+
 from django.http import HttpResponse
 from django.core.cache import cache
 from django.views.decorators.csrf import csrf_exempt
@@ -39,8 +41,10 @@ class DjVarJs(object):
 	def set(self, key, var_set, request):
 
 		try:
+
 			#Salt unique del key
-			salt = request.COOKIES['sessionid']
+			salt = self.generate_or_get_session_salt(request)
+
 			#Seteo el key en cache
 			cache.set(key + "_" + salt, var_set)
 		except ExceptionPyVarJs:
@@ -55,7 +59,8 @@ class DjVarJs(object):
 
 		try:
 			#Salt unique del key
-			salt = request.COOKIES['sessionid']
+			salt = self.generate_or_get_session_salt(request)
+
 			#Retorno el valor desde la cache
 			valor = cache.get(key + "_" + salt)
 		except ExceptionPyVarJs:
@@ -63,14 +68,26 @@ class DjVarJs(object):
 
 		return valor
 
+	'''
+		Generate the session var_js
+	'''
+	def generate_or_get_session_salt(self, request):
 
-''' Clase que crea una excepcion PyVarJS '''
+		try:
+			salt = request.session['var_js']
+		except Exception:
+			uniqueid = uuid.uuid4()
+			request.session['var_js'] = str(uniqueid)
+			salt = request.session['var_js']
+		return salt
+
+
+''' 
+	Clase que crea una excepcion PyVarJS 
+'''
 class ExceptionPyVarJs(Exception):
 	
 	def __init__(self, value):
 		self.value = value
 	def __str__(self):
 		return repr(self.value)
-
-
-		
