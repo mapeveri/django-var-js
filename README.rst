@@ -1,5 +1,3 @@
-django-var-js/README.rst
-======
 Var-js
 ======
 
@@ -23,7 +21,7 @@ Quick start
 
 	url(r'^', include('var_js.dj_var_js.urls')),
 	
-2. In the view.py::
+2. In the views.py::
 	
 	from var_js.views import DjVarJs
 
