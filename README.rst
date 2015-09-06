@@ -19,7 +19,7 @@ Quick start
 
 1. Include the var-js URLconf in your project urls.py like this::
 
-	url(r'^', include('var_js.dj_var_js.urls')),
+		url(r'^', include('var_js.dj_var_js.urls')),
 	
 2. In the views.py::
 	
