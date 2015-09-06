@@ -7,7 +7,9 @@ variables from the server to the client.
 Installing
 ----------
 
-pip install django-var-js
+Via pip::
+
+	pip install django-var-js
 
 Requirements
 -----------
